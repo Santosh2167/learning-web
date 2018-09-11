@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('href="https://fonts.googleapis.com/css?family=Kosugi');
+/*@import url(https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet*/
 
 html {
 	margin: 0;
@@ -7,6 +10,7 @@ html {
 	background-color: #99cc33;
 	/*font-family: sans-serif;*/
 }
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -16,13 +20,13 @@ body {
 header {
 	background-image: url("images/field.jpg");
 	margin-top:-12 ;
-	height: 100%;
+	/*height: 100%;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #99cc33;
 	/*margin-bottom: 500px;*/
-	height: 550px;
+	height: 650px;
 }
 
 h1 {
@@ -30,9 +34,11 @@ h1 {
 	color: white;
 	padding-top: 40px;
 	padding-left: 20px;
+	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	font-family: "Lora", serif;
+	text-shadow: 0px 4px 48px rgba(255,255,255,0.2);
   }
 
 h2 {
@@ -44,9 +50,78 @@ h2 {
 	margin-top: 0px;
 	padding-left: 40px
 }
+.page-wrapper {
+	background-color: #C0C2C6;
+	
 
-.summary {
-	color: red;
-	margin: 0px;
+}
+#zen-summary {
+	
+	margin: 20px 0px 0px 40px;
 	padding: 0px;
+	width: 50%;
+	color: ;
+	font-family: "Titillium Web", verdana;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
+
+#zen-preamble h3, #zen-explanation h3 {
+	font-family: "Kosugi", sans-serif;
+	margin: 0;
+	width: 50%;
+}
+
+
+#zen-preamble {
+	margin: 20px 0px 0px 40px;
+}
+#zen-supporting {
+
+}
+
+.supporting{
+	background-color: #C0C2C6 
+}
+.preamble, .main {
+    
+	padding: 0px;
+	margin: 20px 0px 0px 40px;
+	color: ;
+	font-family: "Titillium Web", verdana;
+	letter-spacing: 0.5px;
+	line-height: 1.5;	
+	/*background-color: #C0C2C6;*/
+}
+
+.design-selection {
+	background-color: salmon;
+
+}
+
+.design-archives {
+	background-color: green;
+}
+
+.sidebar ul {
+	display: inline;
+}
+
+.sidebar li {
+   list-style: none;
+    display: inline-block;
+    /*float: right;*/
+    padding-left: 15px ;
+}
+
+.zen-resources {
+	background-color: khaki;
+}
+
+.archives {
+	margin: 0;
+}
+
+.resources {
+	margin:0;
 }
