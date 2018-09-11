@@ -1,0 +1,20 @@
+html {
+	fotn-family: sans-serif;
+}
+
+body {
+	border: 1px solid black;
+	width: 70%;
+	margin: 20px auto;
+}
+
+button {
+	font-size: 18px;
+	line-height: 1.5;
+	width: 15%;
+}
+
+div {
+	/*border: 3px solid red;*/
+	height: 100px;
+}
