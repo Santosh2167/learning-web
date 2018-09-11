@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+	margin: 0;
+	padding: 0;
+	/*background-image: url("images/mountain.jpg");*/
+	background-color: #99cc33;
+	/*font-family: sans-serif;*/
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+header {
+	background-image: url("images/field.jpg");
+	margin-top:-12 ;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #99cc33;
+	/*margin-bottom: 500px;*/
+	height: 550px;
+}
+
+h1 {
+	font-size: 50px;
+	color: white;
+	padding-top: 40px;
+	padding-left: 20px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-family: "Lora", serif;
+  }
+
+h2 {
+	font-size: 25px;
+	font-style: italic;
+	font-weight: normal;
+	color: #d8d3cb;
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-left: 40px
+}
+
+.summary {
+	color: red;
+	margin: 0px;
+	padding: 0px;
+}
