@@ -1,0 +1,16 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #16313E;
+    color: #FFFFFF;
+    height: 20vh;
+}
+
+.nav-items li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    padding: 15px 17px 20px 18px ;
+}
