@@ -1,0 +1,15 @@
+.red-title {
+    color: red;
+}
+
+article span {
+    color: blue;
+}
+
+header li a:hover {
+    cursor: crosshair;
+}
+
+header li a:visited {
+    color: green;
+}
