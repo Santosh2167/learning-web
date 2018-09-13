@@ -6,6 +6,8 @@ html {
 
 	display: grid;
 	grid-template-columns: 0.5fr .5fr .5fr;
+	grid-gap: 20px;
+	grid-auto-rows: 100px;
 }
 
 .container > div {
@@ -13,4 +15,5 @@ html {
 	padding: 10px;
 	background-color: rgb(207,232,220);
 	border: 2px solid rgb(79,185,227);
+	
 }
