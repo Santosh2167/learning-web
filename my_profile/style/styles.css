@@ -14,6 +14,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 631px;
+	/*margin-top: -16px;*/
 }
 
 .social > ul {
@@ -62,4 +63,21 @@ body {
 }
 
 
+.welcome {
+	position: relative;
+	top: 220px;
+	left: 38%;
+	border: 1px solid white;
+	width: 300px;
+	font-family: "Arimo", sans-serif;
+	border-radius: 25px;
+	text-align: center;
+	background-color: #FFc04c;
+	font-weight: bold;
 
+	/*border-radius: 10px 40px 30px 140px;*/
+}
+
+.menu_container ul li:nth-child(1)::hover {
+	color: red;
+}
