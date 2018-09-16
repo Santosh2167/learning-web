@@ -1,0 +1,36 @@
+html {
+
+	background-color: khaki;
+}
+
+.container {
+	display: grid;
+	grid-gap: 2px;
+	/*grid-template: repeat(6, 1fr) / repeat(auto-fit, minmax(100px,1fr));*/
+	grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+	grid-template-rows: repeat(2, 100px);
+
+	
+}
+
+.container > div:nth-child(1n) {
+	background-color: #96ceb4;
+
+}
+
+.container > div:nth-child(3n) {
+	background-color: magenta;
+}
+
+.container > div:nth-child(2n) {
+	background-color: yellow;
+}
+
+.container > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: bold;
+	font-size: 2em;
+	/*grid-gap: 2px;*/
+}
