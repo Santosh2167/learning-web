@@ -55,6 +55,18 @@ body {
 }
 
 
+.sub-heading {
+	border-bottom: 2px solid green;
+	display: inline-block;
+
+}
+
+.sub-heading-container {
+	display: flex;
+	justify-content: center;
+}
+
+
 .site-header {
 	position: fixed;
 	display: flex;
@@ -118,6 +130,19 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+}
+
+.blog-type {
+    border: 1px solid black;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffc04c;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4PX 14PX;
+    color: black;
+    text-decoration: none;
 }
 
 
