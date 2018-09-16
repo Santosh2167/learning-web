@@ -1,0 +1,24 @@
+html {
+	background-color: #ffee00;
+}
+
+body {
+	width: 500px;
+	margin: 0 auto;
+	/*position: relative;*/
+}
+
+p {
+	background: aqua;
+	border: 3px solid blue;
+	padding: 10px;
+	margin: 10px;
+}
+
+.positioned {
+	position: absolute;
+	background: yellow;
+	/*position: relative;*/
+	top: 30px;
+	left: 30px;
+}
