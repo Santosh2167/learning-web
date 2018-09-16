@@ -1,0 +1,65 @@
+@import url('href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet');
+
+html {
+	background-color: khaki;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.skylight-picture {
+	background-image: url("../image/skylight-pic.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 631px;
+}
+
+.social > ul {
+	list-style-type: none;
+	color: white;	
+}
+
+.social ul li {
+	display: inline;
+}
+
+.menu_container ul {
+	list-style-type: none;
+	margin-right: 40px;
+	/*border: 1px solid white;*/
+	width:500px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Arimo", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.social ul {
+	display: flex;
+	font-weight: bold;
+	width: 150px;
+	/*border: 1px solid white;*/
+	margin-left: 20px;
+	justify-content: space-between;
+	padding-left:0;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.menu_container ul li {
+	display: inline;
+	color: white;
+}
+
+
+.site-header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+
