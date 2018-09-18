@@ -34,4 +34,13 @@
   margin: 10px;
 }
 
+.education {
+  display: flex;
+  /*justify-content: center;*/
+  /*text-align: center;*/
+  border: 2px solid red;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=scssToCss.css.map */
