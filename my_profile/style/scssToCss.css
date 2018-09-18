@@ -43,4 +43,23 @@
   margin: 0 auto;
 }
 
+.tab-tables, .tabs, .tables {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tabs button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=scssToCss.css.map */
