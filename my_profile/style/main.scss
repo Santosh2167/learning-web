@@ -54,10 +54,13 @@
 	display: flex;
 	/*justify-content: center;*/
 	/*text-align: center;*/
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 	width: 90%;
+	height: 450px;
 	margin: 0 auto;
+	padding-bottom: 15px;
 }
+
 
 
  .tables {
@@ -81,23 +84,20 @@
 	justify-content: space-around;
 	border: 1px solid green;
 }
-*****************************************
+/*****************************************/
 .tables {
 	border: 1px solid black;
 }
-*******************************************
- button.tablelinks{
-	background-color: transparent;
-    color: red;
-    text-decoration: underline;
-    border: none;
+/*******************************************/
+ .tabs a{
+	color: red;
 }
 
-.tabs button:hover {
+.tabs a:hover {
 	color: #FFc04c;
 }
 
-.tab button:active {
+.tab :active {
 	/*background-color: #ccc;*/
 }
 .work-table table  {

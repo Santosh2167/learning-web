@@ -131,7 +131,7 @@ body {
 	margin-top: 10px;*/
 }
 
-.time-management, .ruby-class {
+.time-management, .ruby-class, .git-hub {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -161,6 +161,7 @@ body {
 	width: 90%;
 	align-content: center;
 	margin: auto;
+	padding-bottom: 10px;
 
 }
 
@@ -183,5 +184,7 @@ body {
 /*EDUCATION SECTION CSS*/
 .career img {
 	width: 670px;
-	height: 303px;
+	height: 450px;
+	/*margin-bottom: 30px;*/
 }
+
