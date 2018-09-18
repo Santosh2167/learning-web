@@ -52,18 +52,27 @@
 
 .tab-tables {
   display: flex;
-  flex-direction: flex-start;
+  flex-direction: column;
   width: 545px;
+  border: 1px solid blue;
+  background-color: #FFc04c;
 }
 
-.tabs button {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green;
+}
+
+***************************************** .tables {
+  border: 1px solid black;
+}
+
+******************************************* .tablelinks button {
+  background-color: transparent;
+  color: red;
   text-decoration: underline;
+  border: none;
 }
 
 .tabs button:hover {
@@ -71,7 +80,7 @@
 }
 
 .tab button:active {
-  background-color: #ccc;
+  /*background-color: #ccc;*/
 }
 
 .work-table table {
@@ -80,8 +89,9 @@
   letter-spacing: 1px;
   font-size: 0.8rem;
   width: 95%;
-  position: absolute;
+  /*position: absolute;*/
   top: 0px;
+  display: none;
   /*display: none;*/
 }
 
@@ -91,7 +101,7 @@
   border: 2px solid #FFc04c;
   letter-spacing: 1px;
   font-size: 0.8rem;
-  display: none;
+  /*display: none;*/
 }
 
 td, th {
@@ -101,6 +111,11 @@ td, th {
 
 th {
   background-color: rbg(235, 235, 235);
+}
+
+.career-heading {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=scssToCss.css.map */
