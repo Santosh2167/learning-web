@@ -73,16 +73,21 @@
 }
 
 /*******************************************/
-.tabs a {
-  color: red;
+.tabs p {
+  color: black;
+  text-decoration: bold;
 }
 
-.tabs a:hover {
-  color: #FFc04c;
+.tabs p:hover {
+  color: blue;
 }
 
 .tab :active {
   /*background-color: #ccc;*/
+}
+
+.work-table {
+  display: none;
 }
 
 .work-table table {
@@ -93,7 +98,7 @@
   width: 95%;
   /*position: absolute;*/
   top: 0px;
-  display: none;
+  /*display: none;*/
   /*display: none;*/
 }
 
@@ -125,10 +130,6 @@ th {
   background-color: #FFEC8B;
   width: 90%;
   margin: 0 auto;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;*/
 }
 
 .get-in-touch {
@@ -170,7 +171,6 @@ th {
 .msg-ph {
   display: flex;
   justify-content: space-between;
-  border: 1px solid blue;
   width: 828px;
   margin: 0 auto;
   padding-top: 80px;
@@ -179,6 +179,17 @@ th {
 .message textarea {
   margin-top: 8px;
   width: 300px;
+}
+
+.contact-me button {
+  background: gold;
+  border-radius: 25px;
+  text-decoration: bold;
+  font-size: 16px;
+  width: 118px;
+  height: 33px;
+  margin: 0 auto;
+  display: block;
 }
 
 /*# sourceMappingURL=scssToCss.css.map */
