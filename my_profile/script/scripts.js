@@ -28,7 +28,7 @@ displayEducation.onclick = function(){
     educationTable[0].style.display="block";
     workTable[0].style.display="none";
 }
-
+ 
 displayWork.onclick = function(){
     educationTable[0].style.display="none";
     workTable[0].style.display="block";
