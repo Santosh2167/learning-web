@@ -14,6 +14,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 631px;
+	background-color: black;
 	/*margin-top: -16px;*/
 }
 
@@ -139,20 +140,6 @@ body {
 
 
 }
-.blog-type {
-    /*border: 1px solid black;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #ffc04c;
-    border-radius: 20px;
-    text-align: center;
-    padding: 4PX 14PX;
-    color: black;
-    text-decoration: none;*/
-}
-
-
 /*ABOUT ME*/
 
 .about-me {

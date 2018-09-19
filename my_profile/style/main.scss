@@ -1,3 +1,6 @@
+@import url('href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet');
+
+
 @mixin blog-type-link {
 	border: 1px solid black;
     margin: 0 auto;
@@ -137,13 +140,64 @@ th {
 }
 
 .contact-me {
-	height: 100px;
+	height: 500px;
 	background-color: #FFEC8B;
 	width: 90%;
 	margin: 0 auto;
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 }
 
+.get-in-touch {
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+	padding-top: 30px;
+	font-family: "Arimo",sans-serif;
+	font-size: 32px;
+
+}
+
+.name {
+	float: right;
+	margin-right: 190px;
+	margin-top: 40px;
+}
+
+.email {
+	margin-left: 270px;
+	margin-top: 70px;
+}
+
+.name input, .email input, .ph input {
+	background: transparent;
+	border-bottom: 2px solid black;
+	border-right: 0;
+	border-top: 0;
+	border-left:0;
+	width: 300px;
+	font-size: 20px;
+	text-decoration: bold;
+	/*border-color: black;*/
+}
+
+.ph {
+	margin-left: 75px;	
+	
+	}
+
+.msg-ph {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid blue;
+	width: 828px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.message textarea {
+	margin-top: 8px;
+	width: 300px;
+}
