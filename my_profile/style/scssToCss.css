@@ -67,11 +67,12 @@
   border: 1px solid green;
 }
 
+/*****************************************/
 .tables {
   border: 1px solid black;
 }
 
-
+/*******************************************/
 .tabs p {
   color: black;
   text-decoration: bold;
@@ -141,14 +142,14 @@ th {
 }
 
 .name {
-  /*float: right;
+  float: right;
   margin-right: 190px;
-  margin-top: 40px;*/
+  margin-top: 40px;
 }
 
 .email {
- /* margin-left: 270px;
-  margin-top: 70px;*/
+  margin-left: 270px;
+  margin-top: 70px;
 }
 
 .name input, .email input, .ph input {
@@ -164,15 +165,15 @@ th {
 }
 
 .ph {
-  /*margin-left: 75px;*/
+  margin-left: 75px;
 }
 
 .msg-ph {
-  /*display: flex;
+  display: flex;
   justify-content: space-between;
   width: 828px;
   margin: 0 auto;
-  padding-top: 80px*/;
+  padding-top: 80px;
 }
 
 .message textarea {
@@ -192,23 +193,3 @@ th {
 }
 
 /*# sourceMappingURL=scssToCss.css.map */
-
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.name-email {
-  display: flex;
-  border: 1px solid green;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.msg-ph1 {
-  display: flex;
-  border: 1px solid black;
-  justify-content: space-between;
-}
