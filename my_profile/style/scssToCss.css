@@ -227,6 +227,31 @@ body {
 }
 
 /*EDUCATION SECTION CSS*/
+.location-nepal, .location-india, .location-australia {
+  font-size: 20px;
+  position: relative;
+  left: 425px;
+  top: 130px;
+  color: red;
+}
+
+.location-nepal .tooltip-nepal {
+  visibility: hidden;
+  position: absolute;
+  left: 430;
+  top: 130;
+  border: 1px dotted black;
+  background-color: white;
+  width: 200px;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+.location-nepal:hover .tooltip-nepal {
+  visibility: visible;
+}
+
 .career img {
   width: 670px;
   height: 450px;
@@ -287,6 +312,7 @@ body {
   height: 450px;
   margin: 0 auto;
   padding-bottom: 15px;
+  position: relative;
 }
 
 .tables {
@@ -468,6 +494,15 @@ th {
 
   .about-me {
     flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me img {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 750px) {
