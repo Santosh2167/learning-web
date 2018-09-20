@@ -93,6 +93,34 @@ body {
 	/*border-radius: 10px 40px 30px 140px;*/
 }
 
+.homepage-social{
+	/*border: 1px solid white;*/
+	width: 133px;
+	height: 38px;
+	margin: 0 auto;
+	position: relative;
+	top: 338px;
+	
+}
+
+.homepage-social ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin:0;
+	padding:0;
+	align-items: center;
+
+}
+.homepage-social ul li {
+	display: inline;
+}
+.homepage-social ul li a {
+	color: #FFc04c;
+	width: 10px;
+	font-size: 23px;
+}
+
 .social ul li a {
 	color: white;
 }

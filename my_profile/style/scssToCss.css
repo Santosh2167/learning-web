@@ -130,8 +130,9 @@ th {
   background-color: #FFEC8B;
   width: 90%;
   margin: 0 auto;
+  padding: 50px 0 50px;
 }
-
+/*1*/
 .get-in-touch {
   margin: 0 auto;
   width: 400px;
@@ -139,17 +140,6 @@ th {
   padding-top: 30px;
   font-family: "Arimo", sans-serif;
   font-size: 32px;
-}
-
-.name {
-  float: right;
-  margin-right: 190px;
-  margin-top: 40px;
-}
-
-.email {
-  margin-left: 270px;
-  margin-top: 70px;
 }
 
 .name input, .email input, .ph input {
@@ -164,24 +154,14 @@ th {
   /*border-color: black;*/
 }
 
-.ph {
-  margin-left: 75px;
-}
-
-.msg-ph {
-  display: flex;
-  justify-content: space-between;
-  width: 828px;
-  margin: 0 auto;
-  padding-top: 80px;
-}
 
 .message textarea {
   margin-top: 8px;
-  width: 300px;
+  width: 292px;
 }
-
+/*formating Contact Me section*/
 .contact-me button {
+
   background: gold;
   border-radius: 25px;
   text-decoration: bold;
@@ -193,3 +173,37 @@ th {
 }
 
 /*# sourceMappingURL=scssToCss.css.map */
+.get-in-touch {
+  /*border: 1px solid black;*/
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input-fields {
+  display: flex;
+  /*border: 1px solid black;*/
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-email {
+  display: flex;
+  /*border: 1px solid red;*/
+  margin-bottom: 40px;
+  width: 90%;
+  justify-content: space-between;
+
+}
+
+.msg-ph {
+  display: flex;
+  /*border: 1px solid blue;*/
+  width: 90%;
+  justify-content: space-between;
+}
+
+.name label {
+  text-decoration: bold;
+}
