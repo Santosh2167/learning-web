@@ -16,10 +16,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 631px;
+  /*height: 631px;*/
   background-color: black;
   background-attachment: fixed;
-  /*min-height: 500px;*/
+  min-height: 500px;
   /*margin-top: -16px;*/
 }
 
@@ -507,28 +507,14 @@ th {
     margin-bottom: 15px;
   }
 }
-.skill {
-  position: relative;
-}
-
-.skill-list {
-  position: absolute;
-  min-height: 500px;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  /*position:fixed;*/
-  top: 1px;
-}
-
 .skill .skill-photo {
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url("../image/working_man.jpg");
+  background-image: url("../image/working-man.jpg");
   background-size: cover;
   background-position: cover;
   min-height: 500px;
-  background-color: black;
 }
 
 @media (max-width: 750px) {
@@ -636,4 +622,4 @@ th {
   }
 }
 
-/*# sourceMappingURL=scssToCss.css.map */
+/*# sourceMappingURL=scssToCss.scc.map */
