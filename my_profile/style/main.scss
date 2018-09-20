@@ -1,5 +1,6 @@
-@import url('href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet');
-
+@import url('href="https://fonts.googleapis.com/css?family=Arimo');
+@import url('href="https://fonts.googleapis.com/css?family=Montserrat');
+/*@import url("link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"");*/
 
 @mixin blog-type-link {
 	border: 1px solid black;
@@ -185,14 +186,20 @@ body {
 /*ABOUT ME*/
 
 .about-me{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
+	display: flex;
+	/*grid-template-columns: 1fr 1fr;*/
+	width: 90%;
 	align-content: center;
 	margin: auto;
 	padding-bottom: 10px;
 
 }
+
+.about-me div {
+	margin: 0 10px;
+}
+
+
 
 .about-me img {
 	/*width: 560px;*/
@@ -240,11 +247,27 @@ body {
 	letter-spacing: 1px;
 	margin-top:0;
 	text-align: justify;
+	font-family: "Arimo",sans-serif;
 }
 
 .about-me-description {
 	@extend %description-styling;
+	font-family: "Montserrat";
 }
+
+.about-me-description {
+  font-family: "Montserrat";
+}
+.name-line {
+  color: red;
+  font-family: "Montserrat";
+}
+
+.name-subline {
+  color: blue;
+  font-family: "Montserrat";	
+}
+
 
 .ruby-class p {
 	@extend %description-styling;
