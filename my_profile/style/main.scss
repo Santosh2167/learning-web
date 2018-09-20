@@ -267,7 +267,7 @@ body {
 	color: red;
 }
 
-.location-nepal .tooltip-nepal {
+.location-nepal .tooltip-nepal, .location-india .tooltip-india, .location-australia .tooltip-australia {
 	visibility: hidden;
 	position: absolute;
 	left: 430;
@@ -280,7 +280,7 @@ body {
 	color: black;
 }
 
-.location-nepal:hover .tooltip-nepal {
+.location-nepal:hover .tooltip-nepal, .location-india:hover .tooltip-india, .location-australia:hover .tooltip-australia {
 	visibility: visible;
 }
 .career img {
