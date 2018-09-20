@@ -564,11 +564,22 @@ th {
 .skill-list{
 	position: absolute;
 	min-height: 500px;
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,0.7);
 	width: 100%;
 	/*position:fixed;*/
 	top:1px;
 
+}
+
+.hire-me {
+	position: absolute;
+	top: 384px;
+	width:calc(50%-10px);
+	border: 1px solid white;
+	font-family: "Montserrat";
+	font-size: 15px;
+	color: white;
+	padding: 5px;
 }
 
 
