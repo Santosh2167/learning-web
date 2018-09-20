@@ -13,6 +13,205 @@
     color: black;
     text-decoration: none;
 }
+html {
+	background-color: #dfdfdf;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.skylight-picture {
+	background-image: url("../image/skylight-pic.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 631px;
+	background-color: black;
+	/*margin-top: -16px;*/
+}
+
+.social > ul {
+	list-style-type: none;
+	color: white;	
+}
+
+
+.menu_container ul {
+	list-style-type: none;
+	margin-right: 40px;
+	/*border: 1px solid white;*/
+	width:500px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Arimo", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.social ul {
+	display: flex;
+	font-weight: bold;
+	width: 150px;
+	/*border: 1px solid white;*/
+	margin-left: 20px;
+	justify-content: space-between;
+	padding-left:0;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.menu_container ul li, .social ul li {
+	display: inline;
+	
+}
+
+.menu_container ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.sub-heading {
+	border-bottom: 2px solid green;
+	display: inline-block;
+
+}
+
+.sub-heading-container {
+	display: flex;
+	justify-content: center;
+}
+
+
+.site-header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+.welcome {
+	position: relative;
+	top: 220px;
+	left: 38%;
+	border: 1px solid white;
+	width: 300px;
+	font-family: "Arimo", sans-serif;
+	border-radius: 25px;
+	text-align: center;
+	background-color: #FFc04c;
+	font-weight: bold;
+
+	/*border-radius: 10px 40px 30px 140px;*/
+}
+
+.homepage-social{
+	/*border: 1px solid white;*/
+	width: 133px;
+	height: 38px;
+	margin: 0 auto;
+	position: relative;
+	top: 338px;
+	
+}
+
+.homepage-social ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin:0;
+	padding:0;
+	align-items: center;
+
+}
+
+.show-below750px{
+	display:none;
+}
+
+.homepage-social ul li {
+	display: inline;
+}
+.homepage-social ul li a {
+	color: white;
+	width: 10px;
+	font-size: 23px;
+}
+
+.social ul li a {
+	color: white;
+}
+
+.menu_container ul li a:hover, .menu_container ul li:nth-child(1), .social ul li a:hover {
+	color: #FFc04c;
+}
+
+/*BLOG Section*/
+
+
+
+.section-blog {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	height: 600px;
+	/*background-color: #ffd27f;*/
+}
+
+.section-blog > div {
+	width: 32%;
+	background-color: white;
+	border: 2px solid #FFc04c;
+	margin-top: 10px;
+	border-radius: 20px;
+
+}
+
+
+.time-management, .ruby-class, .git-hub {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
+/*ABOUT ME*/
+
+.about-me{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	align-content: center;
+	margin: auto;
+	padding-bottom: 10px;
+
+}
+
+.about-me img {
+	/*width: 560px;*/
+	height: 300px;
+	margin-top: 15px;
+	border-radius: 20px;
+	border-right: 1px solid black;
+	margin-top: 0px;
+
+}
+
+.about-me-description, .ruby-class p {
+/*	line-height: 2;
+	letter-spacing: 1px;
+	margin-top:0;*/
+}
+
+/*EDUCATION SECTION CSS*/
+.career img {
+	width: 670px;
+	height: 450px;
+	/*margin-bottom: 30px;*/
+}
 
 %blog-image-styling {
 
@@ -143,6 +342,56 @@ th {
 	justify-content: center;
 }
 
+
+
+
+
+.name input, .email input, .ph input, {
+	background: transparent;
+	border-bottom: 2px solid black;
+	border-right: 0;
+	border-top: 0;
+	border-left:0;
+	width: 300px;
+	font-size: 20px;
+	text-decoration: bold;
+	/*border-color: black;*/
+}
+
+
+
+.message textarea {
+	margin-top: 8px;
+	width: 300px;
+}
+
+.contact-me button {
+	background: gold;
+	border-radius: 25px;
+	text-decoration: bold;
+	font-size: 16px;
+	width: 118px;
+    height: 33px;
+    margin: 0 auto;
+    display: block;
+}
+/*applying fles to contact me section doingthis 5th time since yesterday*/
+/*.name {
+	float: right;
+	margin-right: 190px;
+	margin-top: 40px;
+}
+
+.email {
+	margin-left: 270px;
+	margin-top: 70px;
+}
+*/
+
+/*.ph {
+	margin-left: 75px;	
+	
+	}*/
 .contact-me {
 	height: 500px;
 	background-color: #FFEC8B;
@@ -160,59 +409,91 @@ th {
 
 }
 
-.name {
-	float: right;
-	margin-right: 190px;
-	margin-top: 40px;
+.input-fields {
+	/*border: 1px solid black;*/
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 }
 
-.email {
-	margin-left: 270px;
-	margin-top: 70px;
-}
 
-.name input, .email input, .ph input {
-	background: transparent;
-	border-bottom: 2px solid black;
-	border-right: 0;
-	border-top: 0;
-	border-left:0;
-	width: 300px;
-	font-size: 20px;
-	text-decoration: bold;
-	/*border-color: black;*/
-}
-
-.ph {
-	margin-left: 75px;	
-	
-	}
 
 .msg-ph {
 	display: flex;
 	justify-content: space-between;
-	width: 828px;
 	margin: 0 auto;
-	padding-top: 80px;
+	/*border: 1px solid blue;*/
+	width: 70%;
+	/*padding-top: 80px;*/
 }
 
-.message textarea {
-	margin-top: 8px;
-	width: 300px;
+.name-email {
+	/*border: 1px solid red;*/
+	width:70%;
+	/*margin: 0 auto;*/
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
-.contact-me button {
-	background: gold;
-	border-radius: 25px;
-	text-decoration: bold;
-	font-size: 16px;
-	width: 118px;
-    height: 33px;
-    margin: 0 auto;
-    display: block;
-}
 
-@media (max-width:740px ) {
+@media (max-width:1090px ) {
+
+.name input, .email input, .ph input, .message textarea {
+
+	width: 190px;
+	/*border: 1px solid black;*/
+	
+}
 
 	
 }
+
+@media(max-width:750px) {
+	.social {
+		display: none;
+	}
+
+	.site-header {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.show-below750px {
+		display: block;
+	}
+	.show-below750px ul{
+		display: inline;
+		list-style-type: none;
+	}
+
+	.show-below750px ul li a {
+		font-size: 23px;
+		color: white;
+
+	}
+	.homepage-social {
+		display: flex;
+		/*justify-content: space-between;*/
+		border: 1px solid white;
+		width: 200px;
+
+	}
+
+	.homepage-social div{
+		width: 50%;
+		border: 1px solid white;
+	}
+
+.homepage-social div ul{
+		display: flex;
+		justify-content:space-between;
+
+	}
+
+}
+

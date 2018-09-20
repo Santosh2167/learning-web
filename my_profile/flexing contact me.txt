@@ -1,0 +1,64 @@
+/*applying fles to contact me section doingthis 5th time since yesterday*/
+/*.name {
+	float: right;
+	margin-right: 190px;
+	margin-top: 40px;
+}
+
+.email {
+	margin-left: 270px;
+	margin-top: 70px;
+}
+*/
+
+/*.ph {
+	margin-left: 75px;	
+	
+	}*/
+.contact-me {
+	height: 500px;
+	background-color: #FFEC8B;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.get-in-touch {
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+	padding-top: 30px;
+	font-family: "Arimo",sans-serif;
+	font-size: 32px;
+
+}
+
+.input-fields {
+	border: 1px solid black;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+.msg-ph {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	border: 1px solid blue;
+	width: 90%;
+	/*padding-top: 80px;*/
+}
+
+.name-email {
+	border: 1px solid red;
+	width:90%;
+	/*margin: 0 auto;*/
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
