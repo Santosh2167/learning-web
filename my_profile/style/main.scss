@@ -28,7 +28,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 631px;
+	height: 100vh;
 	background-color: black;
 	background-attachment: fixed;
 	/*min-height: 500px;*/
@@ -103,7 +103,7 @@ body {
 .welcome {
 	position: relative;
 	top: 220px;
-	left: 38%;
+	margin: 0 auto;
 	border: 1px solid white;
 	width: 300px;
 	font-family: "Arimo", sans-serif;
@@ -165,7 +165,6 @@ body {
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
-	height: 600px;
 	/*background-color: #ffd27f;*/
 }
 
@@ -227,6 +226,8 @@ body {
 	list-style-type: none;
 	display: flex;
 	justify-content: space-around;
+	margin: 0;
+	padding: 0;
 }
 
 .about-me-social ul li {
@@ -286,9 +287,9 @@ body {
 .location-nepal:hover .tooltip-nepal, .location-india:hover .tooltip-india, .location-australia:hover .tooltip-australia {
 	visibility: visible;
 }
-.career img {
-	width: 670px;
-	height: 450px;
+.world-map {
+	max-width: 670px;
+	height: auto;
 	/*margin-bottom: 30px;*/
 }
 
@@ -358,13 +359,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	width: 545px;
+	width: 100%;
+	overflow: hidden;
 }
 
 .tab-tables {
 	display: flex;
 	flex-direction: column;
-	width: 545px;
+	width: 100%;
 	border: 1px solid blue;
 	background-color:#FFc04c;
 }
@@ -490,7 +492,7 @@ th {
 
 .get-in-touch {
 	margin: 0 auto;
-	width: 400px;
+	max-width: 400px;
 	text-align: center;
 	padding-top: 30px;
 	font-family: "Arimo",sans-serif;
@@ -593,6 +595,15 @@ th {
   background-position: cover;
   min-height: 500px ;
   background-color:black;
+}
+
+@media (max-width: 1024px)
+{
+	.map-tooltip {
+		display: none;
+	}
+
+
 }
 
 @media(max-width:750px) {
