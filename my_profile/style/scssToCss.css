@@ -23,6 +23,10 @@ body {
   color: white;
 }
 
+.hamburger {
+  display: none;
+}
+
 .menu_container ul {
   list-style-type: none;
   margin-right: 40px;
@@ -397,6 +401,10 @@ th {
   margin-bottom: 50px;
 }
 
+.message textarea {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1090px) {
   .name input, .email input, .ph input, .message textarea {
     width: 190px;
@@ -423,25 +431,88 @@ th {
   }
 
   .show-below750px ul li a {
-    font-size: 23px;
     color: white;
   }
 
   .homepage-social {
     display: flex;
     /*justify-content: space-between;*/
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     width: 200px;
+    font-size: 15px;
   }
 
   .homepage-social div {
     width: 50%;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
   }
 
   .homepage-social div ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .name-email, .msg-ph, .input-fields {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .name input, .ph input {
+    margin-bottom: 35px;
+  }
+
+  .name input, .email input, .ph input, .message textarea {
+    width: 250px;
+    /*border: 1px solid black;*/
+  }
+}
+@media (max-width: 550px) {
+  .menu_container ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .site-header nav ul, .site-header nav:active ul {
+    right: 20px;
+    z-index: 1000;
+    top: 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 20%;
+    position: absolute;
+    padding: 20px;
+    display: none;
+    background: white;
+    height: 120px;
+  }
+
+  .menu_container ul li a {
+    color: black;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .site-header nav:hover ul {
+    display: block;
+  }
+
+  .site-header nav li {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    text-align: left;
   }
 }
 
