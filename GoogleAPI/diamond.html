@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Diamond</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="diamonds.css">
+
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #000;
+				/*background-color: khaki;	*/
+			}
+			.diamond-grid {
+				width: 70%;
+				margin: 150px auto 0;
+				display: table;
+
+			}
+
+			.items {
+				width: 200px;
+				height: 200px;
+				background: #fff;
+				/*transition: 0.5s;*/
+				opacity: 0.5;
+				transition: 0.5s;
+			}
+
+			.items {
+				top: 20px;
+				vertical-align: middle;
+				display: table-cell;
+			}
+
+			.items:hover {
+				opacity:1;
+			}
+			
+			.items image {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				left: 0;
+				transform: translateY(-50%) scale(1.5);
+			}
+
+			@media (max-width: 767px)
+			{
+				.diamond-grid 
+				{
+					width: 100%;
+					margin: 0 auto;
+				}
+
+
+			}
+	
+		</style>
+
+	</head>
+	<body>
+		<div class="diamond-grid">
+			<div class="items"><img src="../my_profile/image/santosh_pic.jpg"</div>
+			<div class="items"><p><strong>Santosh</strong></p></div>
+			<div class="items"></div>
+			<div class="items"></div>
+			<div class="items"></div>
+			<div class="items"></div>
+			<div class="items"></div>
+			<div class="items"></div>
+			<div class="items"></div>
+			<div class="items"></div>
+
+
+
+		</div>
+
+
+		<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+
+		<!-- <script type="text/javascript" src="jquery.diamonds.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		  <script src="jquery.diamonds.js"></script>
+		  <script type="text/javascript"></script>
+
+		  <script>
+			$(".diamond-grid").diamonds({
+			    size : 200, // Size of diamonds in pixels. Both width and height. 
+			    gap : 5, // Pixels between each square.
+			    hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+			    autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+			    itemSelector : ".items" // the css selector to use to select diamonds-items.
+			});
+          </script>
+		  <!-- integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" -->
+		  <!-- crossorigin="anonymous"></script> -->
+	</body>
+
+
+</html>
