@@ -1,0 +1,39 @@
+.feature-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
+.welcome-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome {
+    font-family: "Arimo", sans-serif;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #FFc04c;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.welcome-animated-content {
+    padding: 10px;
+    margin: 10px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.welcome-animated-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.typed-cursor {
+    font-size: 20px;
+    color: #fff;
+}

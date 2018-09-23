@@ -1,0 +1,28 @@
+.section-blog {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /*background-color: #ffd27f;*/
+}
+
+.section-blog > div {
+    background-color: white;
+    border: 2px solid #FFc04c;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.blog-type {
+
+    @include blog-type-link();
+}
+
+.blog-image {
+    @extend %blog-image-styling;
+}
+
+@media (max-width: $breakpoint-phablets) {
+    .section-blog {
+        flex-direction: column;
+    }
+}
