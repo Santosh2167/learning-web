@@ -11,31 +11,6 @@
 
 @import 'modules/skills-diamond';
 
-.hamburger {
-	display: none;
-}
-
-.menu_container ul {
-	list-style-type: none;
-	margin-right: 40px;
-	/*border: 1px solid white;*/
-	width:500px;
-	display: flex;
-	justify-content: space-between;
-	font-family: "Arimo", sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-
-}
-
-.menu_container ul li {
-	display: inline;
-}
-
-.menu_container ul li a{
-	color: white;
-	text-decoration: none;
-}
 
 
 .sub-heading {
@@ -48,9 +23,6 @@
 	display: flex;
 	justify-content: center;
 }
-
-
-
 
 .homepage-social{
 	/*border: 1px solid white;*/
@@ -84,28 +56,6 @@
 	width: 10px;
 	font-size: 23px;
 }
-
-
-.menu_container ul li a:hover, .menu_container ul li:nth-child(1) {
-	color: #FFc04c;
-}
-
-/*BLOG Section*/
-
-
-
-
-
-
-.time-management, .ruby-class, .git-hub {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-
-
-/*ABOUT ME*/
 
 .about-me{
 	display: flex;
@@ -154,7 +104,13 @@
 }
 
 .about-me img {
-	height: 500px;
+	max-height: 500px;
+
+	@media (max-width: $breakpoint-tablet) {
+        & {
+            width: 100%;
+        }
+    }
 }
 
 .about-me-description, .ruby-class p {
@@ -547,12 +503,12 @@ th {
 
 	.hamburger {
 		display: block;
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		right: 20px;
-		font-size: 25px;
-		color: white;
+	    position: absolute;
+	    right: 0;
+	    font-size: 25px;
+	    color: white;
+	    padding: 8px;
+	    background: rgba(0,0,0,0.5);
 	}
 
 

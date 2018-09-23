@@ -44,7 +44,7 @@
 
 @media(max-width:$breakpoint-phablets) {
 	.site-header nav ul, .site-header nav:active ul {
-		right: 20px;
+		right: 0;
 		z-index: 1000;
 		top: 8px;
 		border: 1px solid white;
@@ -54,7 +54,6 @@
 		padding: 20px;
 		display: none;
 		background: white;
-		height: 120px;
 	}
 
 	.site-header nav:hover ul {
@@ -70,3 +69,59 @@
  		text-align: left;
 	}
 }
+
+.hamburger {
+	display: none;
+}
+
+.menu_container ul {
+	list-style-type: none;
+	margin-right: 40px;
+	/*border: 1px solid white;*/
+	width:500px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Arimo", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+.menu_container ul li {
+	display: inline;
+}
+
+.menu_container ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+.menu_container ul li a:hover, 
+.menu_container ul li:nth-child(1) {
+	color: #FFc04c;
+}
+
+@media(max-width:550px) {
+
+	.menu_container ul {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	    position: absolute;
+	    right: 0;
+	    font-size: 25px;
+	    color: white;
+	    padding: 8px;
+	    background: rgba(0,0,0,0.5);
+	}
+
+	.menu_container ul li a {
+		color: black;
+		display: block;
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+}
+

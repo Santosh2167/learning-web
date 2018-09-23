@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
-.blog-image {
-  border-radius: 20px;
-  width: 95%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
 html {
   /*background-color: #dfdfdf;*/
   background-color: white;
@@ -62,7 +54,7 @@ body {
 }
 @media (max-width: 500px) {
   .site-header nav ul, .site-header nav:active ul {
-    right: 20px;
+    right: 0;
     z-index: 1000;
     top: 8px;
     border: 1px solid white;
@@ -72,7 +64,6 @@ body {
     padding: 20px;
     display: none;
     background: white;
-    height: 120px;
   }
 
   .site-header nav:hover ul {
@@ -88,6 +79,58 @@ body {
     text-align: left;
   }
 }
+.hamburger {
+  display: none;
+}
+
+.menu_container ul {
+  list-style-type: none;
+  margin-right: 40px;
+  /*border: 1px solid white;*/
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu_container ul li {
+  display: inline;
+}
+
+.menu_container ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu_container ul li a:hover,
+.menu_container ul li:nth-child(1) {
+  color: #FFc04c;
+}
+
+@media (max-width: 550px) {
+  .menu_container ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    color: white;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .menu_container ul li a {
+    color: black;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+}
 .site-section--feature {
   background-image: url("../image/skylight-pic.JPG");
   background-position: center;
@@ -101,6 +144,11 @@ body {
 .site-section-inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .site-section-inner {
+    padding: 0 20px;
+  }
 }
 
 .feature-content-container {
@@ -148,19 +196,46 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  /*background-color: #ffd27f;*/
+}
+@media (max-width: 1024px) {
+  .section-blog {
+    flex-direction: column;
+  }
 }
 
-.section-blog > div {
-  background-color: white;
+.blog-item {
   border: 2px solid #FFc04c;
   margin-top: 10px;
   border-radius: 20px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+}
+.blog-item > * {
+  margin-bottom: 12px;
+}
+.blog-item:first-child {
+  margin-left: 0;
+}
+.blog-item:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1024px) {
+  .blog-item {
+    margin-bottom: 12px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .blog-type {
+  display: block;
+  width: 120px;
   border: 1px solid black;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   font-weight: bold;
   background-color: #ffc04c;
@@ -171,14 +246,23 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
-  .section-blog {
-    flex-direction: column;
-  }
+.blog-image {
+  border-radius: 20px;
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.blog-details {
+  line-height: 150%;
+}
+
 .skill {
   position: relative;
   min-height: 500px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .skill-list {
@@ -316,31 +400,6 @@ body {
     margin: 0 auto;
   }
 }
-.hamburger {
-  display: none;
-}
-
-.menu_container ul {
-  list-style-type: none;
-  margin-right: 40px;
-  /*border: 1px solid white;*/
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Arimo", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.menu_container ul li {
-  display: inline;
-}
-
-.menu_container ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 .sub-heading {
   border-bottom: 2px solid green;
   display: inline-block;
@@ -383,18 +442,6 @@ body {
   font-size: 23px;
 }
 
-.menu_container ul li a:hover, .menu_container ul li:nth-child(1) {
-  color: #FFc04c;
-}
-
-/*BLOG Section*/
-.time-management, .ruby-class, .git-hub {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/*ABOUT ME*/
 .about-me {
   display: flex;
   align-content: center;
@@ -442,7 +489,12 @@ body {
 }
 
 .about-me img {
-  height: 500px;
+  max-height: 500px;
+}
+@media (max-width: 1024px) {
+  .about-me img {
+    width: 100%;
+  }
 }
 
 .about-me-description, .ruby-class p {
@@ -793,12 +845,12 @@ th {
 
   .hamburger {
     display: block;
-    width: 40px;
-    height: 40px;
     position: absolute;
-    right: 20px;
+    right: 0;
     font-size: 25px;
     color: white;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .menu_container ul li a {

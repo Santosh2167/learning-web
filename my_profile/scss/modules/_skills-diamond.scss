@@ -1,6 +1,9 @@
 .skill {
     position: relative;
     min-height: 500px;
+
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .skill-list{
@@ -151,6 +154,5 @@
         width: 100%;
         margin: 0 auto;
     }
-
-
+    
 }
