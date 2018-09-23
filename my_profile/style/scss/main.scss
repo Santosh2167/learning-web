@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*@import url("link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"");*/
+
+@mixin blog-type-link {
+	border: 1px solid black;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffc04c;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4PX 14PX;
+    color: black;
+    text-decoration: none;
+}
+
+html {
+	/*background-color: #dfdfdf;*/
+	background-color: white;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.skylight-picture {
+	background-image: url("../image/skylight-pic.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-color: black;
+	background-attachment: fixed;
+	/*min-height: 500px;*/
+	
+	/*margin-top: -16px;*/
+}
+
+.social > ul {
+	list-style-type: none;
+	color: white;	
+}
+
+.hamburger {
+	display: none;
+}
+
+
+.menu_container ul {
+	list-style-type: none;
+	margin-right: 40px;
+	/*border: 1px solid white;*/
+	width:500px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Arimo", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.social ul {
+	display: flex;
+	font-weight: bold;
+	width: 150px;
+	/*border: 1px solid white;*/
+	margin-left: 20px;
+	justify-content: space-between;
+	padding-left:0;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.menu_container ul li, .social ul li {
+	display: inline;
+	
+}
+
+.menu_container ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.sub-heading {
+	border-bottom: 2px solid green;
+	display: inline-block;
+
+}
+
+.sub-heading-container {
+	display: flex;
+	justify-content: center;
+}
+
+
+.site-header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+.welcome {
+	position: relative;
+	top: 220px;
+	margin: 0 auto;
+	border: 1px solid white;
+	width: 300px;
+	font-family: "Arimo", sans-serif;
+	border-radius: 25px;
+	text-align: center;
+	background-color: #FFc04c;
+	font-weight: bold;
+
+	/*border-radius: 10px 40px 30px 140px;*/
+}
+
+.homepage-social{
+	/*border: 1px solid white;*/
+	width: 133px;
+	height: 38px;
+	margin: 0 auto;
+	position: relative;
+	top: 338px;
+	
+}
+
+.homepage-social ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin:0;
+	padding:0;
+	align-items: center;
+
+}
+
+.show-below750px{
+	display:none;
+}
+
+.homepage-social ul li {
+	display: inline;
+}
+.homepage-social ul li a {
+	color: white;
+	width: 10px;
+	font-size: 23px;
+}
+
+.social ul li a {
+	color: white;
+}
+
+.menu_container ul li a:hover, .menu_container ul li:nth-child(1), .social ul li a:hover {
+	color: #FFc04c;
+}
+
+/*BLOG Section*/
+
+
+
+.section-blog {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	/*background-color: #ffd27f;*/
+}
+
+.section-blog > div {
+	width: 32%;
+	background-color: white;
+	border: 2px solid #FFc04c;
+	margin-top: 10px;
+	border-radius: 20px;
+
+}
+
+
+.time-management, .ruby-class, .git-hub {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
+/*ABOUT ME*/
+
+.about-me{
+	display: flex;
+	/*grid-template-columns: 1fr 1fr;*/
+	width: 90%;
+	align-content: center;
+	margin: auto;
+	/*padding-bottom: 10px;*/
+	background-color: white;
+	padding:0;
+	border: 1px solid black;
+
+}
+
+.name-line {
+  /*color: red;*/
+  font-family: "Montserrat";
+  margin:0;
+  padding:0;
+  font-size: 25px;
+}
+
+
+.name-subline {
+  /*color: blue;*/
+  font-family: "Montserrat";
+  margin:0;
+  padding:0;
+  font-size: 20px;	
+}
+
+.about-me div {
+	margin: 0 10px;
+	padding:0;
+}
+.about-me-social ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+
+.about-me-social ul li {
+	display: inline;
+
+}
+
+.about-me-social ul li a{
+	font-size: 20px;
+}
+
+.about-me-social {
+	width: 183px;
+	border: 1px solid black;
+}
+	
+
+.about-me img {
+	/*width: 560px;*/
+	height: 500px;
+	margin-top: 15px;
+	border-radius: 20px;
+	border-right: 1px solid black;
+	margin-top: 0px;
+
+}
+
+.about-me-description, .ruby-class p {
+/*	line-height: 2;
+	letter-spacing: 1px;
+	margin-top:0;*/
+}
+
+/*EDUCATION SECTION CSS*/
+
+.location-nepal, .location-india, .location-australia {
+	font-size: 20px;
+	position: relative;
+	left: 425px;
+	top: 130px;
+	color: red;
+}
+
+.location-nepal .tooltip-nepal, .location-india .tooltip-india, .location-australia .tooltip-australia {
+	visibility: hidden;
+	position: absolute;
+	left: 430;
+	top: 130;
+	border: 1px dotted black;
+	background-color: white;
+	width: 200px;
+	z-index: 1;
+	text-align: center;
+	color: black;
+}
+
+.location-nepal:hover .tooltip-nepal, .location-india:hover .tooltip-india, .location-australia:hover .tooltip-australia {
+	visibility: visible;
+}
+.world-map {
+	max-width: 670px;
+	height: auto;
+	/*margin-bottom: 30px;*/
+}
+
+%blog-image-styling {
+
+	border-radius: 20px;
+	width: 95%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+} 
+
+.blog-type {
+	
+	@include blog-type-link();
+}
+
+.blog-image {
+	@extend %blog-image-styling;
+}
+
+%description-styling {
+	line-height: 2;
+	letter-spacing: 1px;
+	margin-top:0;
+	text-align: justify;
+	font-family: "Arimo",sans-serif;
+}
+
+.about-me-description {
+	@extend %description-styling;
+	font-family: "Montserrat";
+}
+
+.about-me-description {
+  font-family: "Montserrat";
+}
+
+
+
+
+.ruby-class p {
+	@extend %description-styling;
+	margin: 10px;
+}
+
+.time-management p {
+	@extend %description-styling;
+	margin: 10px;
+}
+
+.career {
+	display: flex;
+	/*justify-content: center;*/
+	/*text-align: center;*/
+	/*border: 2px solid red;*/
+	width: 90%;
+	height: 450px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+
+
+ .tables {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+}
+
+.tab-tables {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: 1px solid blue;
+	background-color:#FFc04c;
+}
+
+
+.tabs {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid green;
+}
+/*****************************************/
+.tables {
+	border: 1px solid black;
+}
+/*******************************************/
+ .tabs p{
+	color: black;
+	text-decoration: bold;
+}
+
+.tabs p:hover {
+	color: blue;
+}
+
+.tab :active {
+	/*background-color: #ccc;*/
+}
+.work-table {
+	display:none;
+}
+.work-table table  {
+	border-collapse: collapse;
+	border: 2px solid #FFc04c;
+	letter-spacing: 1px;
+	font-size:0.8rem;
+	width: 95%;
+	/*position: absolute;*/
+	top: 0px;
+	/*display: none;*/
+	/*display: none;*/
+}
+
+.education-table table {
+	/*position: absolute;*/
+	border-collapse: collapse;
+	border: 2px solid #FFc04c;
+	letter-spacing: 1px;
+	font-size:0.8rem;
+	/*display: none;*/
+}
+
+
+td, th {
+	border: 1px solid #FFc04c;
+	padding: 2px 2px;
+}
+
+th {
+	background-color: rbg(235,235,235);
+}
+
+.career-heading {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+.name input, .email input, .ph input, {
+	background: transparent;
+	border-bottom: 2px solid black;
+	border-right: 0;
+	border-top: 0;
+	border-left:0;
+	width: 300px;
+	font-size: 20px;
+	text-decoration: bold;
+	/*border-color: black;*/
+}
+
+
+
+.message textarea {
+	margin-top: 8px;
+	width: 300px;
+}
+
+.contact-me button {
+	background: gold;
+	border-radius: 25px;
+	text-decoration: bold;
+	font-size: 16px;
+	width: 118px;
+    height: 33px;
+    margin: 0 auto;
+    display: block;
+}
+/*applying fles to contact me section doingthis 5th time since yesterday*/
+/*.name {
+	float: right;
+	margin-right: 190px;
+	margin-top: 40px;
+}
+
+.email {
+	margin-left: 270px;
+	margin-top: 70px;
+}
+*/
+
+/*.ph {
+	margin-left: 75px;	
+	
+	}*/
+.contact-me {
+	height: 500px;
+	background-color: #FFEC8B;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.get-in-touch {
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+	padding-top: 30px;
+	font-family: "Arimo",sans-serif;
+	font-size: 32px;
+
+}
+
+.input-fields {
+	/*border: 1px solid black;*/
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+.msg-ph {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	/*border: 1px solid blue;*/
+	width: 70%;
+	/*padding-top: 80px;*/
+}
+
+.name-email {
+	/*border: 1px solid red;*/
+	width:70%;
+	/*margin: 0 auto;*/
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.message textarea {
+	margin-bottom: 20px;
+}
+
+@media (max-width:1090px ) {
+
+.name input, .email input, .ph input, .message textarea {
+
+	width: 190px;
+	/*border: 1px solid black;*/
+	
+}
+
+.about-me {
+	flex-direction: column;
+}
+
+.profile {
+	display: flex;
+	justify-content: center;
+}
+
+.about-me img {
+	margin-bottom: 15px;
+}
+
+	
+}
+.skill {
+	position: relative;
+}
+
+.skill-list{
+	position: absolute;
+	min-height: 500px;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	/*position:fixed;*/
+	top:1px;
+
+}
+
+.hire-me {
+	position: absolute;
+	top: 384px;
+	width:calc(50%-10px);
+	border: 1px solid white;
+	font-family: "Montserrat";
+	font-size: 15px;
+	color: white;
+	padding: 5px;
+}
+
+
+
+.skill .skill-photo{
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../image/working_man.jpg");
+  background-size: cover;
+  background-position: cover;
+  min-height: 500px ;
+  background-color:black;
+}
+
+@media (max-width: 1024px)
+{
+	.map-tooltip {
+		display: none;
+	}
+
+
+}
+
+@media(max-width:750px) {
+	.social {
+		display: none;
+	}
+
+	.site-header {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.show-below750px {
+		display: block;
+	}
+	.show-below750px ul{
+		display: inline;
+		list-style-type: none;
+	}
+
+	.show-below750px ul li a {
+		
+		color: white;
+
+	}
+	.homepage-social {
+		display: flex;
+		/*justify-content: space-between;*/
+		/*border: 1px solid white;*/
+		width: 200px;
+		font-size: 15px;
+
+	}
+
+	.homepage-social div{
+		width: 50%;
+		/*border: 1px solid white;*/
+	}
+
+.homepage-social div ul{
+		display: flex;
+		justify-content:space-around;
+
+	}
+
+	.name-email,.msg-ph, .input-fields {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.name input, .ph input {
+		margin-bottom: 35px;
+	}
+
+	.name input, .email input, .ph input, .message textarea {
+
+	width: 250px;
+	/*border: 1px solid black;*/
+	
+	}
+
+
+	
+}
+
+@media(max-width:550px) {
+
+	.menu_container ul {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 20px;
+		font-size: 25px;
+		color: white;
+	}
+
+	.site-header nav ul, .site-header nav:active ul {
+		right: 20px;
+		z-index: 1000;
+		top: 8px;
+		border: 1px solid white;
+		border-radius: 10px;
+		width: 20%;
+		position: absolute;
+		padding: 20px;
+		display: none;
+		background: white;
+		height: 120px;
+
+	}
+	.menu_container ul li a {
+		color: black;
+		display: block;
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+	.site-header nav:hover ul {
+		display: block;
+	}
+
+ 	.site-header nav li {
+ 		text-align: center;
+ 		width: 100%;
+ 		padding-top: 5px;
+ 		padding-bottom: 5px;
+ 		color: black;
+ 		text-align: left;
+
+		}
+
+} 
+
+/*@media (max-width: 860px) {
+
+	.section-blog {
+		flex-direction: column;
+		width:90%;
+	}
+	
+	.section-blog > div {
+		width:90%;
+
+	}
+
+}*/
+

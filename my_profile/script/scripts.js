@@ -33,3 +33,10 @@ displayWork.onclick = function(){
     educationTable[0].style.display="none";
     workTable[0].style.display="block";
 }
+
+var typed = new Typed('#typed-strings', {
+	strings: ['I am Santosh.', 'I am a: <strong>Web Developer</strong>', 'I am a: <strong>Dad</strong>'],
+	typeSpeed: 100,
+    backDelay: 3000
+
+});
