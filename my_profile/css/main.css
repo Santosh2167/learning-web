@@ -52,7 +52,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .site-header nav ul, .site-header nav:active ul {
     right: 0;
     z-index: 1000;
@@ -194,10 +194,8 @@ body {
 
 .section-blog {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .section-blog {
     flex-direction: column;
   }
@@ -320,9 +318,15 @@ body {
 
 .diamond-box-wrap {
   float: left;
-  width: 250px;
+  width: 200px;
   /* Size of diamonds */
-  height: 250px;
+  height: 200px;
+}
+@media (max-width: 600px) {
+  .diamond-box-wrap {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 .diamond-box {
@@ -374,14 +378,18 @@ body {
   width: 200px;
   height: 200px;
   background: #fff;
-  /*transition: 0.5s;*/
   transition: 0.5s;
-}
-.diamond-grid .items {
   top: 20px;
   vertical-align: middle;
   display: table-cell;
   font-size: 56px;
+}
+@media (max-width: 600px) {
+  .diamond-grid .items {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
 }
 .diamond-grid .items:hover {
   opacity: 0.5;
@@ -400,6 +408,26 @@ body {
     margin: 0 auto;
   }
 }
+.career-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+.career-list ul {
+  margin: 0;
+  padding-left: 25px;
+  max-width: 300px;
+  font-size: 18px;
+  line-height: 150%;
+}
+.career-list li {
+  margin-bottom: 30px;
+}
+
+.career-list-icon {
+  font-size: 60px;
+}
+
 .sub-heading {
   border-bottom: 2px solid green;
   display: inline-block;
@@ -411,12 +439,7 @@ body {
 }
 
 .homepage-social {
-  /*border: 1px solid white;*/
   width: 133px;
-  height: 38px;
-  margin: 0 auto;
-  position: relative;
-  top: 338px;
 }
 
 .homepage-social ul {
@@ -491,7 +514,7 @@ body {
 .about-me img {
   max-height: 500px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .about-me img {
     width: 100%;
   }
@@ -806,14 +829,6 @@ th {
     color: white;
   }
 
-  .homepage-social {
-    display: flex;
-    /*justify-content: space-between;*/
-    /*border: 1px solid white;*/
-    width: 200px;
-    font-size: 15px;
-  }
-
   .homepage-social div {
     width: 50%;
     /*border: 1px solid white;*/
@@ -834,30 +849,7 @@ th {
   }
 
   .name input, .email input, .ph input, .message textarea {
-    width: 250px;
-    /*border: 1px solid black;*/
-  }
-}
-@media (max-width: 550px) {
-  .menu_container ul {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 0;
-    font-size: 25px;
-    color: white;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .menu_container ul li a {
-    color: black;
-    display: block;
-    padding-bottom: 10px;
-    font-size: 15px;
+    width: 100%;
   }
 }
 

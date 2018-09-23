@@ -1,9 +1,9 @@
 .section-blog {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    // justify-content: space-between;
+    // margin: 0 auto;
     
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-phablet) {
         & {
             flex-direction: column;
         }

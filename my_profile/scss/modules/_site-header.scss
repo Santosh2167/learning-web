@@ -42,7 +42,7 @@
 	}
 }
 
-@media(max-width:$breakpoint-phablets) {
+@media(max-width:$breakpoint-phablet) {
 	.site-header nav ul, .site-header nav:active ul {
 		right: 0;
 		z-index: 1000;

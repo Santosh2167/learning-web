@@ -1,13 +1,15 @@
-console.log('Hi!');
-
 (function($, window, document, undefined) {
     'use strict';
-    console.log('Hello');
+
+    var windowWidth = $(window).width();
+    var diamondSize = (windowWidth > 600) ? 250 : 100;
+
+    console.log(windowWidth, diamondSize);
     
     var Diamonds = function(customOptions) {
         this.options = {
             itemSelector : ".item",
-            size : 250,
+            size : diamondSize,
             gap : 0.5,
             autoRedraw : true,
             hideIncompleteRow : false,

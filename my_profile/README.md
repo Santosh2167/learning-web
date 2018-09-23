@@ -25,7 +25,41 @@ A user friendly website, that has links in various positoins on the website so t
 
 4. Allows user to download projects and my CV
 
-###Technology Used:
+
+###Site Map
+1.Home
+    1.1 Menu-Left
+        1.1.1 Facebook 
+        1.1.2 Twitter
+        1.2.3 Linkedin
+    1.2 Menu-Right
+        1.2.1 Home
+        1.2.2 About
+        1.2.3 Career
+        1.2.4 Skills
+        1.2.5 Blogs
+        1.2.6 Contact
+2. About
+
+3. Career
+    3.1 Education 
+    3.2 Work History
+4. Skills
+    4.1 Hire Me
+5. Blogs
+6. Contact 
+    6.1 Submit
+
+
+### Target Audience
+1. Prospective Employeers
+2. Job Agents
+3. Colleagues and Followers 
+
+
+
+
+###Tech Stack:
 Web
 1. Sass - mixin, extend, variables and nesting
 
@@ -37,21 +71,22 @@ Web
 
 5. Jquery 
 
-6. Google API 
+6. Wireframe 
+   Balsamiq
 
-Wireframe 
-Balsamiq
+7. Project Management 
+   Trello 
 
-Project Management 
-Trello 
-
-Backup
-Git hub
+8. Backup
+   Git hub
 
 
 <p align="center">
   <img src="https://github.com/TheodoreChuang/ruby-pos/blob/master/docs/Flow_Chart-Get_Me_Money.jpg" alt="screenshot of the app's flow chart"/>
 </p>
+
+###Usability Consideration 
+
 
 #### Instruction for use: 
 
@@ -141,10 +176,10 @@ Git hub
 
 
 #### Project Planning and Timeline
-* Day 0.1:
+* Day 1:
     * Brainstorm and App Proposal
     * Design on the paper
-* Day 1 to 2.5:
+* Day 1.5 to 2:
     * Wireframing 
     * Trello setup and update
     * Study on various technologies that can be used in the software. Settled down with
@@ -154,8 +189,7 @@ Git hub
         -PhP server Side Programming to send email to myself 
         -Google API - to summarise my Work and Professional background
     * Continous Testing
-* Day 2.5 to 7:
-    * Morning/Afternoon:
+* Day 2 to 7:
         * Development
         * Continous Testing
         * Docmentation
@@ -176,7 +210,7 @@ Git hub
 </p>
 
 ###Fix me section
-This website is the first website the author has developed independently. I have don my best to give it a professional look. Still it needs little work to make it look mre prfessional   
+This website is the first website the author has developed independently. I have done my best to give it a professional look. Still it needs little work to make it look mre prfessional   
 
 ####System limitation 
 One of the blog sections is WIP 

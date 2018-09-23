@@ -10,8 +10,7 @@
 @import 'modules/section-blog';
 
 @import 'modules/skills-diamond';
-
-
+@import 'modules/career-section';
 
 .sub-heading {
 	border-bottom: 2px solid green;
@@ -25,13 +24,7 @@
 }
 
 .homepage-social{
-	/*border: 1px solid white;*/
 	width: 133px;
-	height: 38px;
-	margin: 0 auto;
-	position: relative;
-	top: 338px;
-
 }
 
 .homepage-social ul {
@@ -106,7 +99,7 @@
 .about-me img {
 	max-height: 500px;
 
-	@media (max-width: $breakpoint-tablet) {
+	@media (max-width: $breakpoint-phablet) {
         & {
             width: 100%;
         }
@@ -455,21 +448,13 @@ th {
 		color: white;
 
 	}
-	.homepage-social {
-		display: flex;
-		/*justify-content: space-between;*/
-		/*border: 1px solid white;*/
-		width: 200px;
-		font-size: 15px;
-
-	}
-
+	
 	.homepage-social div{
 		width: 50%;
 		/*border: 1px solid white;*/
 	}
 
-.homepage-social div ul{
+	.homepage-social div ul{
 		display: flex;
 		justify-content:space-around;
 
@@ -485,40 +470,9 @@ th {
 	}
 
 	.name input, .email input, .ph input, .message textarea {
-
-	width: 250px;
-	/*border: 1px solid black;*/
-
+		width: 100%;
 	}
-
-
-
 }
 
-@media(max-width:550px) {
 
-	.menu_container ul {
-		display: none;
-	}
-
-	.hamburger {
-		display: block;
-	    position: absolute;
-	    right: 0;
-	    font-size: 25px;
-	    color: white;
-	    padding: 8px;
-	    background: rgba(0,0,0,0.5);
-	}
-
-
-	.menu_container ul li a {
-		color: black;
-		display: block;
-		padding-bottom: 10px;
-		font-size: 15px;
-	}
-
-
-}
 

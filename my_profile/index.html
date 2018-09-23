@@ -30,7 +30,7 @@
 					<li><a href="#about-me">About</a></li>
 					<li><a href="#career">Career</a></li>
 					<li><a href="#skills">Skills</a></li>
-					<li><a href="#blogs">Blog</a></li>
+					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact-me">Contact</a></li>
 				</ul>
 			</nav>
@@ -53,17 +53,8 @@
                     <div class="homepage-social">
                         <ul>
                             <li><a href="#" title="About me"><i class="fas fa-hand-point-down"></i></a></li>
-                            <li><a href="#" title="Download my CV"><i class = "far fa-file"></i></a></li>
+                            <li><a href="./files/santosh-poudyal-cv.pdf" title="Download my CV"><i class = "far fa-file"></i></a></li>
                             <li><a href="#" title="Contact me"><i class = "far fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="show-below750px">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -107,11 +98,33 @@
         </section>
 
 		<div class="career-heading">
-			<h2 class="sub-heading" id="career">Career</h2>
+			<h2 class="sub-heading" id="career">Education & Career</h2>
 		</div>
 
-		<section class="site-section career">
-			
+		<section class="site-section site-section--career">
+			<div class="site-section-inner">
+				<div class="career-list">
+					<div class="career-list-icon">
+						<i class="fas fa-user-graduate"></i>
+					</div>
+					<div>
+						<ul>
+							<li>Bachelors In Business Information System - 2004 - Kathmandu University</li>
+							<li>Masters In Business Administration - 2008 - Delhi University</li>
+						</ul>
+					</div>	
+
+					<div class="career-list-icon">
+						<i class="fas fa-briefcase"></i>
+					</div>
+					<div>
+						<ul>
+							<li>Sales Manager - 2008 to 2011 - Mumbai, India </li>
+							<li>Bookkeeper & Accountant - 2012 to 2018 - Sydney, Australia</li>
+						</ul>
+					</div>
+				</div>			
+			</div>
 		</section>
 
 		<div class="sub-heading-container">
@@ -149,13 +162,13 @@
 	                    <img class="blog-image" src="./image/pos.jpg"/>
 	                    <a class="blog-type" href="#" >POS In Ruby</a>
 	                    <div class="blog-details">
-	                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec vitae arcu. Maecenas aliquet accumsan leo. Duis viverra diam non justo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Maecenas aliquet accumsan leo. aliquet accumsan leo
+	                        "Get Me The Money" is a terminal application written in Ruby. It has features like password protection, search items by id, record transaction, search transaction by transaction ID. It is a user friendly, light weight application that uses Yamal as a backend.
 	                    </div>
                 	</div>
 
                 	<div class="blog-item">
                 		<div class="blog-details">
-                    		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec vitae arcu. Maecenas aliquet accumsan leo. Duis viverra diam non justo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Maecenas aliquet accumsan leo. Maecenas aliquet accumsan leo.
+                    		"Responsive Website" helps a newbie to design a responsive site. It uses front-awesome and written using flex. This website details enough. This project is helpful for someone who wants to learn responsive website. Code has been scripted neatly and can be understood easily. Give it a go.
                     	</div>
                     	<a class="blog-type"" href="#">Responsive Web</a>
                     	<img class="blog-image" src="./image/ruby.jpg"/>
@@ -166,7 +179,7 @@
 	                 	<img class="blog-image" src="./image/computer1.jpg"/>
 	                    <a class="blog-type" href="#" >JavaScript Game</a>
 	                    <div class="blog-details">
-	                    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec vitae arcu. Maecenas aliquet accumsan leo. Duis viverra diam non justo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Maecenas aliquet accumsan leo. aliquet accumsan leo
+	                    	"Guess my number" is a game based on Java Script. The program generates a random number and User has to guess the number in 10 attempts. It displays all the previous guesses and provides hint on how close the guess was.
 	                    </div>
 	                </div>
                 </div>
@@ -182,31 +195,31 @@
 					<div class="get-in-touch">
 						<p>GET IN TOUCH</p>
 					</div>
+					<form action="https://formspree.io/santosh.poudyal@gmail.com" method="POST">
 						<div class="input-fields">
 							<div class="name-email">
 								<div class="name">
-
 									<label>Name</label><br>
-									<input type="text" name="Name">
+									<input type="text" name="name">
 								</div>
 								<div class="email">
 									<label>Email</label><br>
-									<input type="email" name="Email">
-
+									<input type="email" name="email">
 								</div>
 							</div>
 							<div class="msg-ph">
 								<div class="ph">
 									<label>Phone</label><br>
-									<input type="text" name="ph">
+									<input type="text" name="phone">
 								</div>
 								<div class="message">
 									<label>Message</label><br>
-									<textarea name="user-message"></textarea>
+									<textarea name="message"></textarea>
 								</div>
 							</div>
 						</div>
-					<button>Submit</button>
+						<button type="submit" value="Send">Submit</button>
+					</form>
 			</section>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>

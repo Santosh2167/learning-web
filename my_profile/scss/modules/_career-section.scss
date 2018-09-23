@@ -1,0 +1,25 @@
+.site-section--career {
+	
+}
+
+.career-list {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 50px 0;
+
+	ul {
+	    margin: 0;
+	    padding-left: 25px;
+	    max-width: 300px;
+	    font-size: 18px;
+	    line-height: 150%;
+	}
+
+	li {
+		margin-bottom: 30px;
+	}
+}
+
+.career-list-icon {
+	font-size: 60px;
+}

@@ -1,19 +1,17 @@
+// var displayEducation = document.getElementById("link-education");
+// var displayWork = document.getElementById("link-work")
+// var workTable = document.getElementsByClassName("work-table");
+// var educationTable = document.getElementsByClassName("education-table");
 
-
-var displayEducation = document.getElementById("link-education");
-var displayWork = document.getElementById("link-work")
-var workTable = document.getElementsByClassName("work-table");
-var educationTable = document.getElementsByClassName("education-table");
-
-displayEducation.onclick = function(){
-    educationTable[0].style.display="block";
-    workTable[0].style.display="none";
-}
+// displayEducation.onclick = function(){
+//     educationTable[0].style.display="block";
+//     workTable[0].style.display="none";
+// }
  
-displayWork.onclick = function(){
-    educationTable[0].style.display="none";
-    workTable[0].style.display="block";
-}
+// displayWork.onclick = function(){
+//     educationTable[0].style.display="none";
+//     workTable[0].style.display="block";
+// }
 
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',

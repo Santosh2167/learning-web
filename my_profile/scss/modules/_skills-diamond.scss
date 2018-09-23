@@ -60,8 +60,15 @@
 
 .diamond-box-wrap {
     float: left;
-    width: 250px; /* Size of diamonds */
-    height: 250px;
+    width: 200px; /* Size of diamonds */
+    height: 200px;
+    
+    @media (max-width: $breakpoint-phablet) {
+        & {
+            width: 100px !important;
+            height: 100px !important;
+        }
+    }
 }
 
 .diamond-box {
@@ -117,17 +124,20 @@
     .items {
         width: 200px;
         height: 200px;
-        background: #fff;
-        /*transition: 0.5s;*/
-        
+        background: #fff;        
         transition: 0.5s;
-    }
-
-    .items {
         top: 20px;
         vertical-align: middle;
         display: table-cell;
         font-size: 56px;
+
+        @media (max-width: $breakpoint-phablet) {
+            & {
+                width: 100px;
+                height: 100px;
+                font-size: 30px;
+            }
+        }
         
     }
 
