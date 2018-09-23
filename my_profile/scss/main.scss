@@ -424,70 +424,53 @@ th {
 }
 
 @media (max-width:1090px ) {
+	.name input, .email input, .ph input, .message textarea {
+		width: 190px;
+	}
 
-.name input, .email input, .ph input, .message textarea {
+	.about-me {
+		flex-direction: column;
 
-	width: 190px;
-	/*border: 1px solid black;*/
+	    .describe {
+	        margin-left: 0;
+	    }
+	}
 
-}
+	.profile {
+		display: flex;
+		justify-content: center;
+	}
 
-.about-me {
-	flex-direction: column;
-
-    .describe {
-        margin-left: 0;
-    }
-}
-
-.profile {
-	display: flex;
-	justify-content: center;
-}
-
-.about-me img {
-	margin-bottom: 15px;
+	.about-me img {
+		margin-bottom: 15px;
+	}
 }
 
 
-}
-.skill {
-	position: relative;
-}
-
-.skill-list{
-	position: absolute;
-	min-height: 500px;
-	background-color: rgba(0,0,0,0.7);
-	width: 100%;
-	/*position:fixed;*/
-	top:1px;
-
-}
 
 .hire-me {
-	position: absolute;
-	top: 384px;
-	width:calc(50%-10px);
-	border: 1px solid white;
-	font-family: "Montserrat";
-	font-size: 15px;
-	color: white;
-	padding: 5px;
+    position: absolute;
+    top: 422px;
+    left: calc(50% - 50px);
+    border: 1px solid white;
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+	}
 }
 
 
 
-.skill .skill-photo{
-  width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url("../image/working_man.jpg");
-  background-size: cover;
-  background-position: cover;
-  min-height: 500px ;
-  background-color:black;
-}
+
 
 @media (max-width: 1024px)
 {
@@ -495,7 +478,9 @@ th {
 		display: none;
 	}
 
-
+	.hire-me {
+		display: none;
+	}
 }
 
 @media(max-width:750px) {
