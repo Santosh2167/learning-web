@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Triangle with CSS</title>
+
+		<style>
+			.triangle {
+				width: 0;
+				height: 0;
+				border-bottom: 100px solid red;
+				border-right: 50px solid black;
+				border-left: 50px solid black;
+
+
+			}
+
+			.triangle-down {
+
+				width: 0;
+				height: 0;
+				border-right: 100px solid red;
+				border-top: 50px solid transparent;
+				border-bottom: 50px solid transparent;
+			}
+
+			.circle {
+				width: 100px;
+				height: 100px;
+				background: red;
+				border-radius: 20px;
+			}
+
+			body{
+				background: khaki;
+			}
+
+			.diamond-narrow {
+
+				width: 0;
+				height:0;
+				border: 50px solid black;
+				border-bottom: 70px solid red;
+				position: relative;
+				top: -50px;
+			}
+
+			.diamond-narrow:after {
+				content:'';
+				position: absolute;
+				left: -50px; top: 70px;
+				width:0;
+				height:0;
+				border: 50px solid green;
+				border-top: 70px solid blue;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="triangle">
+
+
+		</div>
+
+		<div class="triangle-down">
+
+
+		</div> 
+
+		<div class="circle">
+
+		</div>
+
+		<div class="diamond-narrow">
+
+		</div>
+
+	</body>
+	
+
+</html>
